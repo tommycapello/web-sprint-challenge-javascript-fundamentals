@@ -6,16 +6,16 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. 
+You are not allowed to collaborate during the sprint challenge.
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
 
 ## Introduction
 
-The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks 
+The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks
 
-In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results 
+In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results
 
 ### Commits
 
@@ -29,15 +29,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+Both the .forEach and .map array methods are iteration methods that loop through an array and execute a callback function on each element in the array. The
+.map method creates a new array from the results of the callback function. The .forEach will return an undefined value and its callback function may alter the original array after execution.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function will recieve a callback function as an argument. The callback function expects to be "called" or executed by the higher order function. Array methods are higher order functions that can use a callback functions to access the data inside of an array. After a callback function is executed, the higher order function controls when the callback function is executed.
 
 3. What is closure?
 
+Closures are created when a function is nested inside of outer function. Nested functions are created in a lexical environment with a reference to the outer fuction. When a nested function is invoked, it will look for the variable inside of its scope, and if it is not found it will reference the outer function and travel up the scope chain until the variable is found. The variable will then be referenced back to the function for execution.
+
 4. Describe the four rules of the 'this' keyword.
+
+The first rule of the "this" keyword is when the keyword "new" is used to call a function, "this" will refer to the brand new object that has been created. If "apply", "call", or "bind" are used to call a function, we are explicitly state what "this" is refering to. If dot notation is used to call a method, the "this" keyword will refer to the object to the left of the dot. This is an example of implicit binding and it represents the majority of use cases. The last rule of the "this" keyword is when a function is invoked in anyother way from the previous rules, it will bind to the global object. The global object in a browser is the "window".
 
 5. Why do we need super() in an extended class?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+The super() method is used inside of the constructor function of an extended class. It will reference the parent's constructor method, which includes the parent's properties and methods. The super() method allows for the properties to be immediately available on the "this" context for the extended class.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -59,7 +70,7 @@ Your finished project must include all of the following requirements
 
 #### Task A: Closure
 
-This challenge takes a look at closures as well as scope. 
+This challenge takes a look at closures as well as scope.
 * [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task B: Objects and Arrays
@@ -79,11 +90,11 @@ Once you have completed the prototypes challenge, it's time to convert all your 
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Task 3: Stretch Goals 
+### Task 3: Stretch Goals
 
-There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit 
+There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit
 
 ## Submission format
 
-See Canvas for submission instructions 
+See Canvas for submission instructions
 
